@@ -72,3 +72,21 @@ console.log(removeExtraSpaces(str))
 //  end of a String along with any extra spaces in the middle. If more 
 // than one space appears in the middle of a string it is replaced by a single space.
 // Example: "   Hello    world!   " -> "Hello world!"
+
+
+// =======================================================
+// Challenge 4
+// =======================================================
+function kebobCase(str) {
+  lowerCaseString = str.toLowerCase()
+  return eachlowerCS = lowerCaseString.split(' ')
+}
+str='Hello world'
+console.log( JSON.stringify(kebobCase(str)) )
+// Convert the whole string to lower case with: string.toLowerCase()
+// Split the string into an array of characters with: string.split('')
+// Filter out the characters you don't want. You want to keep letters, numbers, the space ' ', and the hyphen '-'. One way to approach that is to use the character code. Every character is assigned a number (the character code) for lowercase letters the a through z are codes: 97 to 122. The space " " is character code 32. You can get the character code using string.charCodeAt(). To preserve the numbers look for character codes 48 to 57 (0 to 9). You're looking for character codes 32, 48-57, 97-122, and 45.
+// Use the removeExtraSpaces() to remove any extra spaces.
+// Split on the space and join with hyphen.
+// Example: " Hello world " -> "hello-world"
+
