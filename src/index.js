@@ -78,10 +78,31 @@ console.log(removeExtraSpaces(str))
 // Challenge 4
 // =======================================================
 function kebobCase(str) {
+  // lower case
   lowerCaseString = str.toLowerCase()
-  return eachlowerCS = lowerCaseString.split(' ')
+  // split
+  eachlowerCS = lowerCaseString.split(' ')
+  // filter
+  filtered = eachlowerCS.filter( (c) => {
+    const code = c.charCodeAt(0)
+    if (code > 96 && code < 123) { // keep letters
+      return true
+
+    } else if (code > 47 && code < 58) {// keep numbers
+      return true 
+
+    } else if (code == 32 || code == 45) { // keep hyphen
+      return true
+    }
+    return false 
+  })
+  //remove extra spaces
+  const spaceFree = removeExtraSpaces(filtered.join(''))
+
+  // split, join, return 
+  return spaceFree.split(' ').join('-')
 }
-str='Hello world'
+str = 'Hello world'
 console.log( JSON.stringify(kebobCase(str)) )
 // Convert the whole string to lower case with: string.toLowerCase()
 // Split the string into an array of characters with: string.split('')
