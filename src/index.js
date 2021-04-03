@@ -73,9 +73,9 @@ console.log(removeExtraSpaces(str))
 
 
 // =======================================================
-// Challenge 4
+// Challenge 5
 // =======================================================
-function kebobCase(str, seperator = '-') {
+function kebobCase(str, seperator = '_') {
   // lower case
   const lowerCaseString = str.toLowerCase()
   // split
@@ -95,35 +95,53 @@ function kebobCase(str, seperator = '-') {
     return false 
   })
   //remove extra spaces
-    const spaceFree = removeExtraSpaces(filtered.join('-'))
+    const spaceFree = removeExtraSpaces(filtered.join('_'))
 
   // split, join, return 
-    return spaceFree.split(' ').join('-')
+    return spaceFree.split(' ').join('_')
 }
 console.log(' ')
 console.log("KebabCase:")
-str = 'Hello world #$%^ a-hyphenated-word 1 2 445 5'
+str = 'Hello world a-hyphenated-word 1 2 445 5'
 console.log(kebobCase(str))
 
 // =======================================================
-// Challenge 5
+// Challenge 6
 // =======================================================
 function snakeCase(str) {
-  return kebobCase(str, '_')
+  // const str1 = str.toLowerCase().split(' ')
+  // const newString = str1.join('_')
+  // return newString
+  return kebobCase(str)
 }
 console.log(' ')
 console.log("snakeCase:")
-str = 'Hello world #$%^ a-hyphenated-word'
+str = 'Hello world a-hyphenated-word'
 console.log(snakeCase(str))
 
-console.log(str.split('')) // split on the empty string
-console.log(str.split(' ')) // split on the space
-console.log(str.split('o')) // split on the letter 
-console.log(str.split(' ').join('-'))
+// console.log(str.split('')) // split on the empty string
+// console.log(str.split(' ')) // split on the space
+// console.log(str.split('o')) // split on the letter 
+// console.log(str.split(' ').join('_'))
 
 // =======================================================
-// Challenge 4
+// Challenge 7
 // =======================================================
-function camelCase() {
-
+// Camel Case --> camelCase
+function camelCase(str) {
+  // Output: Camel Case ---> camelCase
+  const str1 = str.split('  ')
+  const str2 = str1.toLowerCase
+  for (i=1; i < str2.length; i++) {
+    const firstLetter = capitalizeWords(str2[i])
+  return firstLetter
+  }
 }
+// console.log(' ')
+// console.log("camelCase:")
+// str = "Camel Case"
+console.log(camelCase(str))
+
+// =======================================================
+// Challenge 8
+// =======================================================
