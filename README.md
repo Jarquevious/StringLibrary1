@@ -1,2 +1,2 @@
-# StringLibrary1
-https://img.shields.io/npm/v/stringlibrarynpm?style=plastic
+# StringLibrary
+[![npm](https://img.shields.io/npm/v/stringlibrarynpm?style=plastic)]
