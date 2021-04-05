@@ -131,8 +131,8 @@ console.log(snakeCase(str))
 function camelCase(str) {
   const words = str.split(' ')
   var result = ''
-  for(var i=0; i<words.length; i++) {
-      if (i==0) {
+  for(var i = 0; i < words.length; i++) {
+      if (i == 0) {
           result += words[i].toLowerCase()
       }
       else {
@@ -142,7 +142,7 @@ function camelCase(str) {
   return result
 }
 console.log(' ')
-console.log("camelCase:")
+console.log("Camel Case:")
 result = camelCase("Camel Case")
 console.log(result)
 
@@ -151,9 +151,13 @@ console.log(result)
 // =======================================================
 // Example: Hello World -> ello WorldH
 function shift(str) {
-  str = str.slice(0)
-  return str
+  firstLetter = str[0]
+  str1 = str.slice(1)
+  return str1 + firstLetter
  
 }
-// str='Hello World'
-// console.log(shift(str))
+
+console.log(' ')
+console.log("shift:")
+str='Hello World'
+console.log(shift(str))
