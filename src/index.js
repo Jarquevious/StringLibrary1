@@ -229,3 +229,16 @@ console.log(" ");
 console.log("Is Empty:");
 str = "Amazing bongo drums for sale";
 console.log(isEmpty(str));
+
+module.exports = { 
+  capitalize,
+  allCaps,
+  capitalizedWords,
+  removeExtraSpaces,
+  snakeCase,
+  kebobCase,
+  camelCase,
+  shift,
+  makeHashTag,
+  isEmpty,
+}

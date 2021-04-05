@@ -1,7 +1,7 @@
 {
-  "name": "StringLibraryNpm",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@jarquevious/stringlibrarynpm",
+  "version": "1.0.1",
+  "description": "File that contains functions for string operations",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/Jarquevious/StringLibrary1.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jarquevious",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Jarquevious/StringLibrary1/issues"
