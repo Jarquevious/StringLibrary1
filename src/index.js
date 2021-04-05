@@ -209,5 +209,23 @@ console.log(makeHashTag(str));
 // Output: isEmpty("Abc def") // false
 
 function isEmpty(str) {
-  // add here
+  str.trim()
+  for (i=0; i > 0; i++){
+    if (str[i] != ('\n') || str[i] != ('\r') || str[i] != ('\t')) {
+      return false 
+    }
+  return true
+  }
+
+
+  // if (str.length === 0) {
+  //   return true
+  // } else {
+  // return false
+  // }
 }
+
+console.log(" ");
+console.log("Is Empty:");
+str = "Amazing bongo drums for sale";
+console.log(isEmpty(str));
