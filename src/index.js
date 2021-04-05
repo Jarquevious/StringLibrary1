@@ -129,19 +129,31 @@ console.log(snakeCase(str))
 // =======================================================
 // Camel Case --> camelCase
 function camelCase(str) {
-  // Output: Camel Case ---> camelCase
-  const str1 = str.split('  ')
-  const str2 = str1.toLowerCase
-  for (i=1; i < str2.length; i++) {
-    const firstLetter = capitalizeWords(str2[i])
-  return firstLetter
+  const words = str.split(' ')
+  var result = ''
+  for(var i=0; i<words.length; i++) {
+      if (i==0) {
+          result += words[i].toLowerCase()
+      }
+      else {
+          result += words[i][0].toUpperCase() + words[i].slice(1)
+      }
   }
+  return result
 }
-// console.log(' ')
-// console.log("camelCase:")
-// str = "Camel Case"
-console.log(camelCase(str))
+console.log(' ')
+console.log("camelCase:")
+result = camelCase("Camel Case")
+console.log(result)
 
 // =======================================================
 // Challenge 8
 // =======================================================
+// Example: Hello World -> ello WorldH
+function shift(str) {
+  str = str.slice(0)
+  return str
+ 
+}
+// str='Hello World'
+// console.log(shift(str))
