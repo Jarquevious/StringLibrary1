@@ -168,19 +168,26 @@ console.log(shift(str));
 
 function makeHashTag(str) {
   let wordArray = str.split(" ").filter((char) => char !== "");
-  let result = "#";
+  wordArray.sort((a, b) => b.length - a.length);
+  let topThree = wordArray.slice(0,3)
+  
 
+  // console.log(wordArray)
+  let result = "#";
+  
   if (wordArray.length === 0) {
     return false;
   }
 
+
   result =
-    result +
-    wordArray
+    // result +
+    topThree
       .map((word) => {
-        let capitalizedWord = word.charAt(0).toUpperCase() + word.slice(1);
-        return capitalizedWord.split(' ');
+        let capitalizedWord = result + word.charAt(0).toUpperCase() + word.slice(1);
+        return capitalizedWord;
       });
+      
       
 
   if (result.length > 140) {
@@ -194,3 +201,13 @@ console.log(" ");
 console.log("Make Hashtag:");
 str = "Amazing bongo drums for sale";
 console.log(makeHashTag(str));
+
+// =======================================================
+// Challenge 10
+// =======================================================
+// Input: "Abc def"
+// Output: isEmpty("Abc def") // false
+
+function isEmpty(str) {
+  // add here
+}
