@@ -209,13 +209,13 @@ console.log(makeHashTag(str));
 // Output: isEmpty("Abc def") // false
 
 function isEmpty(str) {
-  str.trim()
-  for (i=0; i > 0; i++){
-    if (str[i] != ('\n') || str[i] != ('\r') || str[i] != ('\t')) {
+  for (let i = 0; i < str.length; i += 1) {
+    if (str[i] !== ' ' || str[i]  !== ('\n') || str[i] !== ('\r') || str[i] !== ('\t')) {
       return false 
     }
-  return true
   }
+  return true
+}
 
 
   // if (str.length === 0) {
@@ -223,17 +223,17 @@ function isEmpty(str) {
   // } else {
   // return false
   // }
-}
+
 
 console.log(" ");
 console.log("Is Empty:");
-str = "Amazing bongo drums for sale";
+str = "         ";
 console.log(isEmpty(str));
 
 module.exports = { 
   capitalize,
   allCaps,
-  capitalizedWords,
+  capitalizeWords,
   removeExtraSpaces,
   snakeCase,
   kebobCase,
