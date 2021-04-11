@@ -49,3 +49,7 @@ isEmpty(str)          // Checks if the string is empty
 // Input:   'hello world'
 // Output:  False
 ```
+# Installation
+```
+git clone https://github.com/Jarquevious/StringLibrary1
+```
