@@ -6,10 +6,12 @@
 #### This is a easy and simple string manipulation library. Its focus is to run functions that manipulate the string in several ways.
 
 ### Functions: 
-
-upperFirst(str)       // Upper cases the first letter of the first word
+<!--code blocks-->
+```
+upperFirst(str)  // Upper cases the first letter of the first word
 // Input:   'hello world'
 // Output:  'Hello world'
+```
 
 allCaps(str)          // Upper cases every letter
 // Input:   'hello world'
