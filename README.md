@@ -11,7 +11,7 @@
 upperFirst(str)  // Upper cases the first letter of the first word
 // Input:   'hello world'
 // Output:  'Hello world'
-```
+
 
 allCaps(str)          // Upper cases every letter
 // Input:   'hello world'
@@ -48,3 +48,4 @@ makeHashTag(str)      // Changes format of 3 longest words to hashtags
 isEmpty(str)          // Checks if the string is empty
 // Input:   'hello world'
 // Output:  False
+```
