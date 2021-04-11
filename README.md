@@ -1,6 +1,7 @@
 # Welcome to String Manipulatiopn Library :wave:
 
 ![npm](https://img.shields.io/npm/v/stringlibrarynpm?style=plastic)
+![GitHub followers](https://img.shields.io/github/followers/jarquevious?style=plastic)
 
 ## Description
 #### This is a easy and simple string manipulation library. Its focus is </br> to run functions that manipulate the string in several ways.
