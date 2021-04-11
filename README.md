@@ -1,5 +1,5 @@
 # Welcome to String Manipulatiopn Library :wave:
-</p>
+
 [![npm](https://img.shields.io/npm/v/stringlibrarynpm?style=plastic)]
 
 ## Description
