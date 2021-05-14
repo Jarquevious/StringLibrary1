@@ -1,4 +1,4 @@
-# Welcome to String Manipulatiopn Library :wave:
+# Welcome to String Manipulation Library :wave:
 
 ![npm](https://img.shields.io/npm/v/stringlibrarynpm?style=plastic)
 ![GitHub followers](https://img.shields.io/github/followers/jarquevious?style=plastic)
