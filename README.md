@@ -2,7 +2,7 @@
 
 ![npm](https://img.shields.io/npm/v/stringlibrarynpm?style=plastic)
 ![GitHub followers](https://img.shields.io/github/followers/jarquevious?style=plastic)
-
+[![Coverage Status](https://coveralls.io/repos/github/Jarquevious/StringLibrary1/badge.svg?branch=master)](https://coveralls.io/github/Jarquevious/StringLibrary1?branch=master)
 ## Description
 #### This is a easy and simple string manipulation library. Its focus is </br> to run functions that manipulate the string in several ways.
 
